@@ -60,9 +60,7 @@ Swift-evolution thread: [Discussion thread topic for that proposal](https://foru
 
 ## Motivation
 
-Task Local Values are a significant improvement over thread-local storage in that it is a better fit for Swift's concurrency model because it takes advantage of its structured nature. In existing code, developers have used thread-local or queue-specific values to associate state with each thread/queue, however the exact semantics of those mechanisms made it difficult and error prone in reality.
-
-Specifically, previously developers could have used thread-local or queue-specific values to achieve some of these features, however the exact semantics of those made it difficult and error prone in reality. 
+Task Local Values are a significant improvement over thread-local storage in that it is a better fit for Swift's concurrency model because it takes advantage of its structured nature. In existing code, developers have used thread-local or queue-specific values to associate state with each thread/queue, however the exact semantics of those mechanisms made it difficult and error prone in reality. 
 
 > The use of thread-locals in highly asynchronous libraries is generally frowned upon because it is so difficult to get right, and generally only adds to the confusion rather than helping one achieve transparent context propagation. 
 > 
